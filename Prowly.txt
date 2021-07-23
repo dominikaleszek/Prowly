@@ -6,7 +6,7 @@ Scenario: It's possible to find images regarding "prowly" using google lens on a
 When opening the Google App on an android device
 And pressing the "google lens" button in the right corner of the search bar
 And focus the camera on the Prowly's logo
-And press the "loop" button
+And press the "loupe" button
 Then images related to "prowly" are displayed
 
 2. Feature: Searching for "prowly" in the news tab using only Google voice search
