@@ -59,7 +59,7 @@ And typing in the date as a string of numbers in the "from" field"
 And pressing the "ok" button
 Then all the results show up (without any date range)
 
-3. Feature: Choosing a year date range while being logged as a Google Account user
+3. Feature: Choosing a year date range while being logged in as a Google Account user
 
 Scenario: When the logged in user chooses a year date range, the results are not shown in a chronological order from the most recent
 When opening the Google Chrome Browser
