@@ -19,7 +19,7 @@ And saying "prowly news"
 Then the results about "prowly" don't show up in the news tab
 
 
-3. Feature: Searching for "prowly" on www.google.com and pressing on the flights tab
+3. Feature: Searching for "prowly" on www.google.com and opening the "flights" tab
 
 Scenario: It's not possible to search for "prowly" and see informations about it in the "flights" tab
 When opening the Google Chrome Browser
