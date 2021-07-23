@@ -1,0 +1,73 @@
+A) Wyszukiwanie słowa "prowly" na stronie google.com z filtrowaniem według kategorii treści (wszystko, wideo, wiadomości itp.).
+
+1. Feature: Finding images about Prowly using google lens
+
+Scenario: It's possible to find images regarding "prowly" using google lens on an android device
+When opening the Google App on an android device
+And pressing the "google lens" button in the right corner of the search bar
+And focus the camera on the Prowly's logo
+And press the "loop" button
+Then images related to "prowly" are displayed
+
+2. Feature: Searching for "prowly" in the news tab using only Google voice search
+
+Scenario: It's not possible to search for "prowly" and see the news about it using only Google voice search
+When opening the Google Chrome Browser
+And opening www.google.com website
+And pressing the "Google voice search" button
+And saying "prowly news"
+Then the results about "prowly" don't show up in the news tab
+
+
+3. Feature: Searching for "prowly" on www.google.com and pressing on the flights tab
+
+Scenario: It's not possible to search for "prowly" and see informations about it in the "flights" tab
+When opening the Google Chrome Browser
+And opening www.google.com website
+And typing "prowly" in the search bar
+And pressing the "search" button
+And pressing the "flights" tab
+Then there are no results regarding Prowly found
+
+B) Wyszukiwanie słowa "prowly" na stronie google.com z filtrowanie po dacie.
+
+1. Feature: Choosing a past date instead of a future one in the date range
+
+Scenario: It's possible to choose a yesterday date as a future day in the date range
+When opening the Google Chrome Browser
+And opening www.google.com website
+And putting a word "prowly" in the search bar
+And pressing the "search" button
+And pressing the "tools" button
+And pressing the "whenever" dropdown
+And choosing the "date range"
+And choosing "to" as the yesterday's date instead of a future or a present one
+And pressing the "ok" button
+Then the past date in the "to" field is displayed as the date "from"
+
+2. Feature: Typing in date range in a wrong way
+
+Scenario: When the user types in a date range in a wrong form, the system shows all the results
+When opening the Google Chrome Browser
+And opening www.google.com website
+And typing "prowly" in the search bar
+And pressing the "search" button
+And pressing the "tools" button
+And pressing the "whenever" dropdown
+And choosing the "date range"
+And typing in the date as a string of numbers in the "from" field"
+And pressing the "ok" button
+Then all the results show up (without any date range)
+
+3. Feature: Choosing a year date range while being logged as a Google Account user
+
+Scenario: When the logged in user chooses a year date range, the results are not shown in a chronological order from the most recent
+When opening the Google Chrome Browser
+And opening www.google.com website 
+And log in as Google Account user
+And typing "prowly" in the search bar
+And pressing the "search" button
+And pressing the "tools" button
+And pressing the "whenever" dropdown
+And choosing the "year"
+Then the results are not shown in a chronological order
